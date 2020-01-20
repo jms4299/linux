@@ -61,6 +61,9 @@ sudo sed -i 's/enabled=1/enabled=0/g' /etc/yum.repos.d/fedora-modular.repo
 echo fastestmirror=true >> /etc/dnf/dnf.conf
 echo deltarpm=true >> /etc/dnf/dnf.conf
 
+#neofetch
+
+echo neofetch >> ~/.bashrc
 ## Install Fedy
 sudo dnf copr enable kwizart/fedy
 sudo dnf install fedy -y
@@ -114,6 +117,7 @@ nano `#Because pressing i is too hard sometimes` \
 pinta \
 stacer \
 vlc \
+neofetch \
 
 ###
 # Remove some un-needed stuff
